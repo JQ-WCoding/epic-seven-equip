@@ -54,6 +54,9 @@ const inputValue = () => {
 
     const onChanged = (args) => {
         console.log( args );
+        if ( args ) {
+
+        }
     }
 
     return (
