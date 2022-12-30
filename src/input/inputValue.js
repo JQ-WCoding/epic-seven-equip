@@ -52,10 +52,11 @@ const inputValue = () => {
         },
     ]
 
-    const onChanged = (args) => {
-        console.log( args );
-        if ( args ) {
-
+    const onChanged = ( args ) => {
+        try {
+            const [food] = args.value;
+        } catch ( e ) {
+            console.log( e );
         }
     }
 
