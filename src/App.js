@@ -1,9 +1,9 @@
 import './App.css';
 import React from "react";
-import inputValue from "./input/inputValue";
+import Main from "./screen/Main";
 
 function App() {
-  return inputValue();
+  return Main();
 }
 
 export default App;
