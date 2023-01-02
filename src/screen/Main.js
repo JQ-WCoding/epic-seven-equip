@@ -1,28 +1,14 @@
-import React, {useState} from "react";
-import Dropdown from 'react-dropdown';
-import {options} from "../options/options";
+import React from "react";
+import DropInput from "./DropInput";
 
 const Main = () => {
 
-    const [dropDownOptions] = useState( options.map( ( {label} ) => {
-        return label
-    } ) );
-
     const array = ['1', '2', '3', '4'];
-
-
-    const onChanged = ( args ) => {
-
-    }
 
     return (
         <>
             <div>
-                {array.map( ( each ) => <Dropdown options={dropDownOptions} className="myOptionClassName"
-                                                  onChange={onChanged} key={each}/>
-                )}
-
-                {array.map( ( i ) => <input key={i} type="number" value="0" onChange={onChanged}/> )}
+                {array.map( ( each ) => <DropInput/> )}
             </div>
         </>
     )
