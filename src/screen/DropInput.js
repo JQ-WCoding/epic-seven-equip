@@ -7,16 +7,16 @@ const DropInput = ( props ) => {
         return label
     } ) );
 
-    const onChanged = () => {
-
+    const onChanged = (args) => {
+        console.log( args );
     }
 
     return (
         <>
             <Dropdown options={dropDownOptions} className="myOptionClassName"
-                      onChange={onChanged} key={each}/>
+                      onChange={onChanged} key={props.each}/>
 
-            <input key={i} type="number" value="0" onChange={onChanged}/>
+            <input key={props.index} type="number" value="0" onChange={onChanged}/>
         </>
     )
 }
