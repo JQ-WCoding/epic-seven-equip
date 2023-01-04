@@ -8,7 +8,7 @@ const Main = () => {
     return (
         <>
             <div>
-                {array.map( ( each ) => <DropInput/> )}
+                {array.map( ( each ) => <DropInput dropDownKey='1' inputKey='2'/> )}
             </div>
         </>
     )

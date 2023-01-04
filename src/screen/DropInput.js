@@ -14,9 +14,9 @@ const DropInput = ( props ) => {
     return (
         <>
             <Dropdown options={dropDownOptions} className="myOptionClassName"
-                      onChange={onChanged} key={props.each}/>
+                      onChange={onChanged} key={props.dropDownKey}/>
 
-            <input key={props.index} type="number" value="0" onChange={onChanged}/>
+            <input key={props.inputKey} type="number" value="0" onChange={onChanged}/>
         </>
     )
 }
