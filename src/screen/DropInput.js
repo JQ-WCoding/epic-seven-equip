@@ -13,7 +13,7 @@ const DropInput = ( props ) => {
 
     return (
         <>
-            <Dropdown options={dropDownOptions} className="myOptionClassName"
+            <Dropdown options={dropDownOptions}
                       onChange={onChanged} key={props.dropDownKey}/>
 
             <input key={props.inputKey} type="number" value="0" onChange={onChanged}/>
