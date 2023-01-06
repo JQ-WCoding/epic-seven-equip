@@ -7,8 +7,10 @@ const DropInput = ( props ) => {
         return label
     } ) );
 
-    const onChanged = (args) => {
-        console.log( args );
+    const onChanged = ( args ) => {
+        const filteredData = options.filter( ( {label} ) => label === args.value );
+
+        console.log( 'filteredData', filteredData );
     }
 
     return (
@@ -16,7 +18,7 @@ const DropInput = ( props ) => {
             <Dropdown options={dropDownOptions}
                       onChange={onChanged} key={props.dropDownKey}/>
 
-            <input key={props.inputKey} type="number" value="0" onChange={onChanged}/>
+            <input key={props.inputKey} type="number" defaultValue="0"/>
         </>
     )
 }
