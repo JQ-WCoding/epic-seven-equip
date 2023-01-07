@@ -17,8 +17,8 @@ const Main = () => {
     return (
         <>
             <div>
-                {/*{array.map( ( each ) => <DropInput dropDownKey={each} inputKey={each}/> )}*/}
-                <DropInput dropDownKey={1} inputKey={11}/>
+                {array.map( ( each ) => <DropInput dropDownKey={each} inputKey={each}/> )}
+                {/*<DropInput dropDownKey={1} inputKey={11}/>*/}
                 {/*{dropInputList}*/}
             </div>
         </>
