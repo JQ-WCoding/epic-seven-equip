@@ -18,7 +18,7 @@ const Main = () => {
         <>
             <div>
                 {array.map( ( each ) => <DropInput dropDownKey={each} inputKey={each}/> )}
-                {/*<DropInput dropDownKey={1} inputKey={11}/>*/}
+                <DropInput dropDownKey={1} inputKey={11}/>
                 {/*{dropInputList}*/}
             </div>
         </>
