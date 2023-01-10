@@ -57,7 +57,7 @@ const DropInput = ( props ) => {
             <input key={props.inputKey} type="number" value={value} min={minNumber} max={maxNumber}
                    onChange={inputOnChanged}/>
 
-            <div>변환 수치 : {result}</div>
+            <div>총 점수 : {result}</div>
         </>
     );
 }
