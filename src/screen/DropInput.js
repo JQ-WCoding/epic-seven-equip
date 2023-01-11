@@ -19,19 +19,16 @@ const DropInput = ( props ) => {
 
         switch ( filteredData.division ) {
             case 'percentage':
-                console.log( 'percentage' );
 
                 setRangeValue( filteredData.minValue, filteredData.maxValue );
                 setWeightedValue( filteredData.weightedValue );
                 break;
             case 'pure':
-                console.log( 'pure' );
 
                 setRangeValue( 1, 5 );
                 setWeightedValue( filteredData.weightedValue );
                 break;
             default:
-                console.log( 'nothig' );
 
                 setRangeValue( 0, 0 );
                 break;
